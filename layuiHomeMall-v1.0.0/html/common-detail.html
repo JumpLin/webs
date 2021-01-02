@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>品藏网-详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="../res/layui/css/layui.css">
+		<link rel="stylesheet" href="../res/static/css/index.css">
+	</head>
+	<body>
+		<style type="text/css">
+			.layui-tab-brief>.layui-tab-title .layui-this {
+				color: #dbbb92;
+			}
+
+			.layui-tab-brief>.layui-tab-more li.layui-this:after,
+			.layui-tab-brief>.layui-tab-title .layui-this:after {
+				border: none;
+				border-radius: 0;
+				border-bottom: 2px solid #dbbb92;
+			}
+			.priceList {
+				    width: 547px;
+				    height: 156px;
+				    background-color: #FBF6F0;
+				    /* margin-top: -4px; */
+				    position: relative;
+				    top: 8px;
+				}
+		
+			.priceDesc{
+				    /* padding-top: 160px; */
+				    /* margin-top: -81px; */
+				       width: 550px;
+				       height: 120px;
+				       background-color: #FBF6F0;
+				       padding-top: -14px;
+				       margin-top: -17px;
+			}
+			.house-detail div.price .shopChoose .shopBtn {
+			    padding-bottom: 0;
+			    padding-top: 8px;
+			}
+			.morethan{
+				        position: relative;
+				        right: -437px;
+				        top: 26px;
+						   background-color: #FBF6F0;
+			}
+		</style>
+		
+		<div class="layui-container house-detail">
+			<br/>
+			<div class="layui-row price">
+				<div class="layui-col-sm6">
+					<div class="intro-img"><img src="../res/static/img/goods_img1.jpg"></div>
+					<ul class="thumb">
+						<li><img src="../res/static/img/goods_img2.jpg"></li>
+						<li><img src="../res/static/img/goods_img3.jpg"></li>
+						<li><img src="../res/static/img/goods_img4.jpg"></li>
+						<li><img src="../res/static/img/goods_img5.jpg"></li>
+					</ul>
+				</div>
+				<div class="layui-col-sm6 shopChoose">
+					<div class="title">
+						<p><span class="layui-badge">新品</span>轻奢吊灯现代极简创意灯具</p>好评率 <span>90%</span>
+					</div>
+					<p><span>￥<big><b>199</b></big></span>原价￥<big><del>399</del></big></p>
+					<div class="layui-form priceDesc">
+                 
+                     <span>90%</span>
+				
+					</div>
+					<div class="shopBtn">
+						<button class="layui-btn layui-btn-primary shop">出价</button>
+						<button class="layui-btn layui-btn-primary collect"><i class="layui-icon layui-icon-rate" id="collect"></i>收藏</button>
+					</div>
+					<div class="priceList">
+                         <table class="layui-table">
+							<thead>
+								<tr>
+									<th>出价人</th>
+									<th>出价类型</th>
+									<th>出价</th>
+									<th>出价时间</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>会员4(领先)</td>
+									<td>系统出价</td>
+									<td>13800</td>
+									<td>2021-01-02 10:32:36</td>
+								</tr>
+								<tr>
+									<td>会员4(领先)</td>
+									<td>系统出价</td>
+									<td>13800</td>
+									<td>2021-01-02 10:32:36</td>
+								</tr>
+								<tr>
+									<td>会员4(领先)</td>
+									<td>系统出价</td>
+									<td>13800</td>
+									<td>2021-01-02 10:32:36</td>
+								</tr>
+						
+							</tbody>
+						</table>
+						
+					</div>
+					
+									<button id="morethanBtn"   class="layui-btn layui-btn-primary layui-icon layui-icon-down morethan">更多列表</button>	
+				
+	
+				</div>
+			</div>
+			<div class="layui-row layui-col-space" id="isShow">
+				<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+					<ul class="layui-tab-title">
+						<li class="layui-this">竞拍记录</li>
+					</ul>
+					<div class="layui-tab-content">
+						<table class="layui-table">
+							<thead>
+								<tr>
+									<th>出价人</th>
+									<th>出价类型</th>
+									<th>出价</th>
+									<th>出价时间</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>会员4(领先)</td>
+									<td>系统出价</td>
+									<td>13800</td>
+									<td>2021-01-02 10:32:36</td>
+								</tr>
+								<tr>
+									<td>会员4(领先)</td>
+									<td>系统出价</td>
+									<td>13800</td>
+									<td>2021-01-02 10:32:36</td>
+								</tr>
+								<tr>
+									<td>会员4(领先)</td>
+									<td>系统出价</td>
+									<td>13800</td>
+									<td>2021-01-02 10:32:36</td>
+								</tr>
+								<tr>
+									<td>会员4(领先)</td>
+									<td>系统出价</td>
+									<td>13800</td>
+									<td>2021-01-02 10:32:36</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		
+
+		<script src="../res/layui/layui.js"></script>
+		<script src="../res/static/js/jquery-3.4.1.min.js"></script>
+		<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+		<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+		<script>
+			layui.config({
+				base: '../res/static/js/'
+			}).use('house');
+		</script>
+<script type="text/javascript">
+	$("#morethanBtn").click(function(){
+		var classdesc=$(this).attr("class");
+		if(classdesc.indexOf("layui-icon-down")!=-1){
+			$(this).attr("class","layui-btn layui-btn-primary layui-icon layui-icon-right morethan");
+			$("#isShow").hide();
+		}else{
+			$(this).attr("class","layui-btn layui-btn-primary layui-icon layui-icon-down morethan");
+			$("#isShow").show();
+		}
+		
+		
+	});
+	
+	
+</script>
+	</body>
+</html>
