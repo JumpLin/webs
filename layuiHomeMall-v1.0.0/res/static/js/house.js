@@ -367,10 +367,9 @@ layui.define(['element', 'carousel', 'table', 'util'], function(exports) {
 				type: 2,
 				title: '发起寄拍',
 				content: 'addSender.html',
-				area: ['730px', '420px'],
+				area: ['730px', '600px'],
 				shade: 0.8,
 				skin: 'address-class',
-				btn: '确定',
 				yes: function(index, layero) {
 					window['layui-layer-iframe' + index].layui.form.on('submit(useradd-submit)', function(data) {
 						layer.close(index);
@@ -388,8 +387,8 @@ layui.define(['element', 'carousel', 'table', 'util'], function(exports) {
 		layer.open({
 			type: 2,
 			title: '详情',
-			content: 'addSender.html',
-			area: ['730px', '420px'],
+			content: 'common-detail.html',
+			area: ['1300px', '1000px'],
 			shade: 0.8,
 			skin: 'address-class',
 			btn: '确定',
