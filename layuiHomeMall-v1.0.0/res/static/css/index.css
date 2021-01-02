@@ -158,9 +158,11 @@ body.user{background-color: #FAFAFA;}
 .house-list .layui-row div.list-detail .img{overflow: hidden;}
 .house-list .layui-row div.list-detail img{width: 100%; transform: scale(1.1); transition: 1s;}
 .house-list .layui-row div.list-detail:hover img{transform: scale(1); transition: 1s;}
-.house-list .layui-row div.list-detail p{padding-left: 15px; padding-right: 13px; text-align: right; color: #AAA; font-size: 12px; line-height: 44px; position: relative;}
+/*list页面的拍卖结束日期样式*/
+.house-list .layui-row div.list-detail p{padding-left: 15px; padding-right: 1px;  color: #AAA; font-size: 14px; line-height: 30px; position: relative;}
 .house-list .layui-row div.list-detail p.title{text-align: left; font-size: 16px; color: #333; line-height: 26px; padding-top: 15px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
-.house-list .layui-row div.list-detail p span.price{font-size: 12px; color: #e52c32; position: absolute; left: 15px;}
+/*list页面的当前最高价*/
+.house-list .layui-row div.list-detail p span.price{font-size: 16px; color: #e52c32; position: absolute; left: 15px;}
 .house-list #houseList{margin-top: 70px; margin-bottom: 80px;}
 .house-list #houseList .layui-laypage,.house-usercol #userList .layui-laypage
 ,.house-detail #detailList .layui-laypage{display: block; text-align: center;}
