@@ -313,6 +313,52 @@ layui.define(['element', 'carousel', 'table', 'util'], function(exports) {
 			}]
 		]
 	});
+	//收藏
+	table.render({
+		elem: '#user-save',
+		url: 'json/sender.json',
+		toolbar: '#addsender-toolbar',
+		skin: 'line',
+		cols: [
+			[{
+				type: 'space',
+				width: 100,
+				align: 'center',
+				templet: '#spaceTpl',
+				width: 50
+			}, {
+				field: 'createdate',
+				title: '创建时间',
+				align: 'center',
+				width: 135
+			}, {
+				field: 'productname',
+				title: '商品名称',
+				align: 'center',
+				width: 250
+			}, {
+				field: 'price',
+				title: '当前竞拍价格',
+				align: 'center',
+				width: 200
+			}, {
+				field: 'numbers',
+				title: '竞拍人数',
+				align: 'center',
+				width: 120
+			}, {
+				field: 'flag',
+				title: '拍卖状态',
+				align: 'center',
+				width: 120
+			}, {
+				title: '操作',
+				align: 'center',
+				templet: '#senderTpl123',
+				width: 120
+			}]
+		]
+	});
 	
 	/*我的寄拍-监听头部工具条*/
 	table.on('toolbar(user-sender)', function(obj) {
