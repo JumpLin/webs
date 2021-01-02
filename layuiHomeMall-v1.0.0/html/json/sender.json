@@ -7,20 +7,20 @@
     ,"productname": "纪念币一号"
     ,"price": "123212"
 	,"numbers":12
-	,"flag":"已结束"
+	,"flag":"进行中"
     ,"default": true
   },{
     "createdate": "2020-04-28 02:33:29"
     ,"productname": "纪念币一号"
     ,"price": "123212"
 	,"numbers":12
-	,"flag":"已结束"
+	,"flag":"已卖出"
   },{
     "createdate": "2020-04-28 02:33:29"
     ,"productname": "纪念币一号"
     ,"price": "123212"
 	,"numbers":12
-	,"flag":"已结束"
+	,"flag":"未卖出"
   }]
 }
 
