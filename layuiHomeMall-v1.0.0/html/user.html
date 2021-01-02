@@ -62,7 +62,7 @@
           <img src="../res/static/img/person.png">
           <div class="name">
             <p>小明1988</p>
-            <span><i>VIP2</i></span>
+            <span><i id="activeBtn">激活</i></span>
           </div>
         </div>
         <ul>
@@ -153,6 +153,7 @@
 </script>
 
 <script src="../res/layui/layui.js"></script>
+<script src="../res/static/js/jquery-3.4.1.min.js"></script>
 <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
 <!--[if lt IE 9]>
   <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
@@ -163,6 +164,35 @@
     base: '../res/static/js/' 
   }).use('house'); 
 </script>
-
+<script type="text/javascript">
+	
+	layui.define(['element', 'carousel', 'table', 'util'], function(exports) {
+		
+		
+		
+		
+		
+		
+		
+		
+	})
+ $("#activeBtn").click(function(){
+    layer.open({
+    	type: 2,
+    	title: '会员认证',
+    	content: 'active.html',
+    	area: ['730px', '420px'],
+    	shade: 0.8,
+    	skin: 'address-class',
+    	btn: '确定',
+    	yes: function(index, layero) {
+    		window['layui-layer-iframe' + index].layui.form.on('submit(useradd-submit)', function(data) {
+    			layer.close(index);
+    		});
+    		layero.find('iframe').contents().find("#useradd-submit").trigger('click');
+    	}
+    });
+ })
+</script>
 </body>
 </html>
