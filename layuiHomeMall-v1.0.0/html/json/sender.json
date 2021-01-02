@@ -1,0 +1,26 @@
+{
+  "code": 0
+  ,"msg": ""
+  ,"count": "100"
+  ,"data": [{
+    "createdate": "2020-04-28 02:33:29"
+    ,"productname": "纪念币一号"
+    ,"price": "123212"
+	,"numbers":12
+	,"flag":"已结束"
+    ,"default": true
+  },{
+    "createdate": "2020-04-28 02:33:29"
+    ,"productname": "纪念币一号"
+    ,"price": "123212"
+	,"numbers":12
+	,"flag":"已结束"
+  },{
+    "createdate": "2020-04-28 02:33:29"
+    ,"productname": "纪念币一号"
+    ,"price": "123212"
+	,"numbers":12
+	,"flag":"已结束"
+  }]
+}
+
