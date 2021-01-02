@@ -14,7 +14,7 @@
     <div class="house-nav">
       <span class="layui-breadcrumb" lay-separator="|">
         <a href="login.html">登录</a>
-        <a href="">我的订单</a>
+        <a href="user.html">个人中心</a>
         <a href="">在线客服</a>
       </span>
       <span class="layui-breadcrumb house-breadcrumb-icon" lay-separator=" ">
@@ -45,16 +45,46 @@
 
 <div class="layui-fulid" id="house-login">
   <div class="layui-form">
-    <p>手机号登录</p>
-    <div class="layui-input-block login">
-      <i class="layui-icon layui-icon-house-mobile"></i>
-      <input type="text" required lay-verify="required" placeholder="请输入手机号" class="layui-input">
-    </div>
-    <div class="layui-input-block getCode">
-      <input type="text" required lay-verify="required" placeholder="请输入短信验证码" class="layui-input">
-      <button class="layui-btn">获取验证码</button>
-    </div>
-    <button class="layui-btn" lay-submit lay-filter="user-login">登录</button>
+   <div class="layui-tab layui-tab-brief">
+   	<ul class="layui-tab-title" style="font-size: 20px;">
+   		<li class="layui-this">手机登录</li>
+   		<li>账号密码登录</li>
+   	</ul>
+   	<div class="layui-tab-content">
+   		<div class="layui-tab-item layui-show">
+   			<div style="margin-top: -25px;">
+				 <p>手机号登录</p>
+				    <div class="layui-input-block login">
+				      <i class="layui-icon layui-icon-house-mobile"></i>
+				      <input type="text" required lay-verify="required" placeholder="请输入手机号" class="layui-input">
+				    </div>
+				    <div class="layui-input-block getCode">
+				      <input type="text" required lay-verify="required" placeholder="请输入短信验证码" class="layui-input">
+				      <button class="layui-btn">获取验证码</button>
+				    </div>
+					<button class="layui-btn" lay-submit lay-filter="user-login">登录</button>
+   			</div>
+   
+   			</div>
+   			<div class="layui-tab-item">
+   				<div style="margin-top: -25px;">
+					<p>账号密码登录</p>
+					
+					   <div class="layui-input-block login">
+						<i class="layui-icon layui-icon-username"></i>
+					     <input type="text" required lay-verify="required" placeholder="请输入账号" class="layui-input">
+					   </div>
+					   <div class="layui-input-block getCode">
+					     <input type="text" required lay-verify="required" placeholder="请输入密码" class="layui-input">
+					     <button class="layui-btn">获取验证码</button>
+					   </div>
+					   <button class="layui-btn" >登录</button>
+   				</div>
+   			</div>
+   		</div>
+		
+   	</div>
+   </div>
   </div>
 </div>
 

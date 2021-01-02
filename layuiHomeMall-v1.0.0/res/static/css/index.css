@@ -116,8 +116,8 @@ body.user{background-color: #FAFAFA;}
 .house-footer .about p{color: #999; margin-top: 10px;}
 
 /* 登录页面 */
-#house-login{height: 575px; padding-top: 125px; background: url(../img/load_bg.jpg)  no-repeat center center;}
-#house-login .layui-form{width: 300px; height: 390px; padding: 0 28px 0 32px; margin:0 auto; background-color: #FFF; box-shadow: 0 0 0 10px rgba(255,255,255,0.3);}
+#house-login{height: 555px; padding-top: 100px; background: url(../img/load_bg.jpg)  no-repeat center center;}
+#house-login .layui-form{width: 350px; height: 400px; padding: 0 28px 0 32px; margin:0 auto; background-color: #FFF; box-shadow: 0 0 0 10px rgba(255,255,255,0.3);}
 #house-login .layui-form p{font-size: 20px; line-height: 120px; text-align: center;}
 #house-login .layui-form .layui-input-block{margin-left: 0;}
 #house-login .layui-form .layui-input-block input{height: 50px; padding-left: 15px; color: #999; margin-bottom: 20px;}

@@ -8,39 +8,63 @@
 	</head>
 	<body>
 		<form class="layui-form" action="">
-		  <div class="layui-form-item">
-		    <label class="layui-form-label">充值金额</label>
-		    <div class="layui-input-block">
-		      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
-		    </div>
-		  </div>
-		  <div class="layui-form-item">
-		    <label class="layui-form-label">身份证照片</label>
-		    <div class="layui-input-block">
-		<button type="button" class="layui-btn" id="test1">
-		  <i class="layui-icon">&#xe67c;</i>上传图片
-		</button>
-		    </div>
-		  </div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">昵称</label>
+				<div class="layui-input-block">
+					<input type="text" name="title" required lay-verify="required" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">邮箱</label>
+				<div class="layui-input-block">
+					<input type="text" name="title" required lay-verify="required" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">真实姓名</label>
+				<div class="layui-input-block">
+					<input type="text" name="title" required lay-verify="required" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">身份证照片</label>
+				<div class="layui-input-block">
+					<button type="button" class="layui-btn" id="test1">
+						<i class="layui-icon">&#xe67c;</i>上传图片
+					</button>
+				</div>
+			</div>
+			    <div class="layui-input-block" style="border: 1px solid #e6e6e6; margin-right: 100px;">
+			      <p style="text-align: center;">认证须知<p></p>
+			    </div>
+			  <div class="layui-form-item">
+			    <div class="layui-input-block">
+			      <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+			      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+			    </div>
+			  </div>
 		</form>
-		
+
 	</body>
 </html>
+
+<script src="../res/layui/layui.js"></script>
 <script type="text/javascript">
-	
-layui.use('upload', function(){
-  var upload = layui.upload;
-   
-  //执行实例
-  var uploadInst = upload.render({
-    elem: '#test1' //绑定元素
-    ,url: '/upload/' //上传接口
-    ,done: function(res){
-      //上传完毕回调
-    }
-    ,error: function(){
-      //请求异常回调
-    }
-  });
-});
+	layui.use('upload', function() {
+		var upload = layui.upload;
+
+		//执行实例
+		var uploadInst = upload.render({
+			elem: '#test1' //绑定元素
+				,
+			url: '/upload/' //上传接口
+				,
+			done: function(res) {
+				//上传完毕回调
+			},
+			error: function() {
+				//请求异常回调
+			}
+		});
+	});
 </script>

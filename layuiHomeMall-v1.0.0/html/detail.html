@@ -19,33 +19,36 @@
 				border-radius: 0;
 				border-bottom: 2px solid #dbbb92;
 			}
+
 			.priceList {
-				    width: 547px;
-				    height: 156px;
-				    background-color: #FBF6F0;
-				    /* margin-top: -4px; */
-				    position: relative;
-				    top: 8px;
-				}
-		
-			.priceDesc{
-				    /* padding-top: 160px; */
-				    /* margin-top: -81px; */
-				       width: 550px;
-				       height: 120px;
-				       background-color: #FBF6F0;
-				       padding-top: -14px;
-				       margin-top: -17px;
+				width: 547px;
+				height: 156px;
+				background-color: #FBF6F0;
+				/* margin-top: -4px; */
+				position: relative;
+				top: 8px;
 			}
+
+			.priceDesc {
+				/* padding-top: 160px; */
+				/* margin-top: -81px; */
+				width: 550px;
+				height: 120px;
+				background-color: #FBF6F0;
+				padding-top: -14px;
+				margin-top: -17px;
+			}
+
 			.house-detail div.price .shopChoose .shopBtn {
-			    padding-bottom: 0;
-			    padding-top: 8px;
+				padding-bottom: 0;
+				padding-top: 8px;
 			}
-			.morethan{
-				        position: relative;
-				        right: -437px;
-				        top: 26px;
-						   background-color: #FBF6F0;
+
+			.morethan {
+				position: relative;
+				right: -437px;
+				top: 26px;
+				background-color: #FBF6F0;
 			}
 		</style>
 		<div class="house-header">
@@ -53,7 +56,7 @@
 				<div class="house-nav">
 					<span class="layui-breadcrumb" lay-separator="|">
 						<a href="login.html">登录</a>
-						<a href="">我的订单</a>
+						<a href="user.html">个人中心</a>
 						<a href="">在线客服</a>
 					</span>
 					<span class="layui-breadcrumb house-breadcrumb-icon" lay-separator=" ">
@@ -73,11 +76,8 @@
 				</div>
 				<ul class="layui-nav close">
 					<li class="layui-nav-item layui-this"><a href="index.html">首页</a></li>
-					<li class="layui-nav-item"><a href="list.html">居家用品</a></li>
-					<li class="layui-nav-item"><a href="list.html">小家电</a></li>
-					<li class="layui-nav-item"><a href="list.html">洗护</a></li>
-					<li class="layui-nav-item"><a href="list.html">厨具</a></li>
-					<li class="layui-nav-item"><a href="list.html">日用品</a></li>
+					<li class="layui-nav-item"><a href="list.html">拍卖市场</a></li>
+					<li class="layui-nav-item"><a href="list.html">月拍</a></li>
 				</ul>
 				<button id="switch">
 					<span></span><span class="second"></span><span class="third"></span>
@@ -103,16 +103,16 @@
 					</div>
 					<p><span>￥<big><b>199</b></big></span>原价￥<big><del>399</del></big></p>
 					<div class="layui-form priceDesc">
-                 
-                     <span>90%</span>
-				
+
+						<span>90%</span>
+
 					</div>
 					<div class="shopBtn">
 						<button class="layui-btn layui-btn-primary shop">出价</button>
 						<button class="layui-btn layui-btn-primary collect"><i class="layui-icon layui-icon-rate" id="collect"></i>收藏</button>
 					</div>
 					<div class="priceList">
-                         <table class="layui-table">
+						<table class="layui-table">
 							<thead>
 								<tr>
 									<th>出价人</th>
@@ -140,15 +140,15 @@
 									<td>13800</td>
 									<td>2021-01-02 10:32:36</td>
 								</tr>
-						
+
 							</tbody>
 						</table>
-						
+
 					</div>
-					
-									<button id="morethanBtn"   class="layui-btn layui-btn-primary layui-icon layui-icon-down morethan">更多列表</button>	
-				
-	
+
+					<button id="morethanBtn" class="layui-btn layui-btn-primary layui-icon layui-icon-down morethan">更多列表</button>
+
+
 				</div>
 			</div>
 			<div class="layui-row layui-col-space" id="isShow">
@@ -232,21 +232,19 @@
 				base: '../res/static/js/'
 			}).use('house');
 		</script>
-<script type="text/javascript">
-	$("#morethanBtn").click(function(){
-		var classdesc=$(this).attr("class");
-		if(classdesc.indexOf("layui-icon-down")!=-1){
-			$(this).attr("class","layui-btn layui-btn-primary layui-icon layui-icon-right morethan");
-			$("#isShow").hide();
-		}else{
-			$(this).attr("class","layui-btn layui-btn-primary layui-icon layui-icon-down morethan");
-			$("#isShow").show();
-		}
-		
-		
-	});
-	
-	
-</script>
+		<script type="text/javascript">
+			$("#morethanBtn").click(function() {
+				var classdesc = $(this).attr("class");
+				if (classdesc.indexOf("layui-icon-down") != -1) {
+					$(this).attr("class", "layui-btn layui-btn-primary layui-icon layui-icon-right morethan");
+					$("#isShow").hide();
+				} else {
+					$(this).attr("class", "layui-btn layui-btn-primary layui-icon layui-icon-down morethan");
+					$("#isShow").show();
+				}
+
+
+			});
+		</script>
 	</body>
 </html>
